@@ -133,37 +133,98 @@ html {
 
 /* Resposive */
 
-/* ========== MEDIA QUERIES PARA TABLETS Y MÓVILES ========== */
-@media screen and (max-width: 768px) {
-  body {
-    background-attachment: scroll;
+/* ========== MEDIA QUERIES PARA TABLETS ========== */
+@media screen and (max-width: 1024px) {
+  .contenedorImagenQuienesSomos {
+    width: 85%;
+    height: 60%;
   }
 
-  nav {
-    height: 60px;
-    padding: 0 15px;
+  .contenedorRedZone h1 {
+    font-size: clamp(2rem, 4vw, 4.5rem);
+    padding: 0 20px;
   }
 
-  nav ul {
+  .contenedorProducto {
+    width: 400px;
+    height: 560px;
+  }
+
+  .contenedorDeProductos {
     gap: 1.5rem;
-  }
-
-  nav ul li a {
-    font-size: 0.9rem;
   }
 }
 
+/* ========== MEDIA QUERIES PARA TELÉFONOS ========== */
+@media screen and (max-width: 768px) {
+  .quienesSomos {
+    height: auto;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  .contenedorImagenQuienesSomos {
+    width: 95%;
+    height: auto;
+    min-height: 50vh;
+  }
+
+  .contenedorRedZone {
+    padding: 40px 0;
+  }
+
+  .contenedorRedZone h1 {
+    font-size: clamp(1.8rem, 6vw, 3rem);
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+
+  .contenedorDeProductos {
+    gap: 1.5rem;
+    padding: 0 15px;
+  }
+
+  .contenedorProducto {
+    width: 100%;
+    max-width: 350px;
+    height: 490px;
+  }
+}
+
+/* ========== MEDIA QUERIES PARA TELÉFONOS PEQUEÑOS ========== */
 @media screen and (max-width: 480px) {
-  nav {
-    height: 50px;
+  .fondoPrincipal {
+    background-attachment: scroll;
+    min-height: 100vh;
+    height: auto;
+  }
+
+  .quienesSomos {
+    padding: 30px 15px;
+    min-height: auto;
+  }
+
+  .contenedorImagenQuienesSomos {
+    width: 100%;
+    height: auto;
+  }
+
+  .contenedorRedZone {
+    padding: 30px 0;
+  }
+
+  .contenedorRedZone h1 {
+    font-size: clamp(1.5rem, 7vw, 2.5rem);
+    margin-bottom: 25px;
+  }
+
+  .contenedorDeProductos {
+    gap: 1.2rem;
     padding: 0 10px;
   }
 
-  nav ul {
-    gap: 1rem;
-  }
-
-  nav ul li a {
-    font-size: 0.85rem;
+  .contenedorProducto {
+    max-width: 300px;
+    height: 420px;
   }
 }

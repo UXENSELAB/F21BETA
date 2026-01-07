@@ -73,3 +73,38 @@ nav ul li a {
 nav ul li a:hover {
   color: red;
 }
+
+/* ========== MEDIA QUERIES PARA TABLETS Y MÓVILES ========== */
+@media screen and (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  nav {
+    height: 60px;
+    padding: 0 15px;
+  }
+
+  nav ul {
+    gap: 1.5rem;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    height: 50px;
+    padding: 0 10px;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 0.85rem;
+  }
+}
