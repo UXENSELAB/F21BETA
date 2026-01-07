@@ -232,3 +232,44 @@ html {
     height: 420px;
   }
 }
+
+/* ========== MEDIA QUERIES PARA IPHONE (360px) ========== */
+@media screen and (max-width: 360px) {
+  .fondoPrincipal {
+    background-attachment: scroll;
+    height: 100vh;
+  }
+
+  .quienesSomos {
+    height: 100vh;
+    min-height: 100vh;
+    padding: 20px 10px;
+  }
+
+  .contenedorImagenQuienesSomos {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+  }
+
+  .contenedorRedZone {
+    padding: 20px 0;
+  }
+
+  .contenedorRedZone h1 {
+    font-size: clamp(1.3rem, 8vw, 2rem);
+    margin-bottom: 15px;
+    padding: 0 10px;
+  }
+
+  .contenedorDeProductos {
+    gap: 1rem;
+    padding: 0 8px;
+  }
+
+  .contenedorProducto {
+    max-width: 100%;
+    width: 100%;
+    height: 380px;
+  }
+}
