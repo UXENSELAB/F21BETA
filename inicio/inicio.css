@@ -1,5 +1,5 @@
 .fondoPrincipal {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 
   background-image: url(../img/fondoAColorConF21.png);
@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   opacity: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -15,12 +16,13 @@ html {
 }
 
 .quienesSomos {
-  width: 100vw;
+  width: 100%;
   height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: opacity 0.5s ease;
+  overflow-x: hidden;
 }
 
 .contenedorImagenQuienesSomos.visible {
@@ -46,9 +48,10 @@ html {
 /* Ultima parte de la pagina para el prewie catalogo */
 
 .contenedorRedZone {
-  width: 100vw;
+  width: 100%;
   height: auto;
   padding: 64px 0;
+  overflow-x: hidden;
 }
 
 .contenedorRedZone h1 {
@@ -158,7 +161,7 @@ html {
 /* ========== MEDIA QUERIES PARA TELÉFONOS ========== */
 @media screen and (max-width: 768px) {
   .quienesSomos {
-    height: auto;
+    height: 100vh;
     min-height: 100vh;
     padding: 40px 20px;
   }
@@ -200,8 +203,9 @@ html {
   }
 
   .quienesSomos {
+    height: 100vh;
+    min-height: 100vh;
     padding: 30px 15px;
-    min-height: auto;
   }
 
   .contenedorImagenQuienesSomos {
